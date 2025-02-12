@@ -141,8 +141,8 @@ jobs:
     - name: Upload config
       uses: actions/upload-artifact@main
       with:
-        name: xdr6086-66-config
-        path: ARM_Out/xdr6086_66.config
+        name: xdr6086-config
+        path: ARM_Out/xdr6086.config
  
     - name: Upload Packages
       uses: actions/upload-artifact@main
