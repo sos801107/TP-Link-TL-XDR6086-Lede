@@ -18,5 +18,6 @@
 #echo 'src-git openclash https://github.com/vernesong/OpenClash' >> feeds.conf.default
 #echo 'src-git small https://github.com/kenzok8/small' >> feeds.conf.default
 #echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >> feeds.conf.default
-echo 'src-git 2305ipk https://github.com/sos801107/2305-ipk' >> feeds.conf.default
+#echo 'src-git 2305ipk https://github.com/sos801107/2305-ipk' >> feeds.conf.default
+echo 'src-git extraipk https://github.com/xiangfeidexiaohuo/extra-ipk' >> feeds.conf.default
 
