@@ -69,7 +69,11 @@ jobs:
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
-
+      
+      ## 强制默认r2s/r4s/r5s编译内核为6.6  
+      sed -i "s/KERNEL_PATCHVER:=*.*/KERNEL_PATCHVER:=6.6/g" target/linux/mediatek/Makefile
+      sed -i "s/KERNEL_PATCHVER=*.*/KERNEL_PATCHVER=6.6/g" target/linux/mediatek/Makefile     
+      
     - name: Load custom configuration
       run: |
         [ -e files ] && mv files openwrt/files
